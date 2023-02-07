@@ -1,4 +1,4 @@
-# Supermarket
+# SupermarketJava
 Just a regular supermarket program
 
 ### Some things I plan on adding

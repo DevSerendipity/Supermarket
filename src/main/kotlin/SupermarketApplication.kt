@@ -4,12 +4,16 @@ fun main() {
 }
 
 class SupermarketApplication {
+    private val itemView = ItemView()
+    private val supermarket = Supermarket()
+
+    init {
+        supermarket.shoppingCartItems
+    }
+
     fun start() {
 
         println("LIST OF ALL PRODUCTS: ")
-        val supermarket = Supermarket()
-        supermarket.shoppingCartItems
-        val itemView = ItemView()
         itemView.displayAllProducts()
         println("Price for all items without price discount/spike is: ${supermarket.sumOfAllItems}")
 

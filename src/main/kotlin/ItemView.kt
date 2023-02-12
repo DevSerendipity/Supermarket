@@ -1,6 +1,3 @@
-package newOne
-
-
 class ItemView {
 
     fun displayAllProducts() {
@@ -20,5 +17,4 @@ class ItemView {
             println("Name: ${it.key} : Price = ${it.value}")
         }
     }
-
 }

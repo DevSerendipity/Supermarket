@@ -1,8 +1,5 @@
-package newOne
-
 import java.io.File
 import kotlin.random.Random
-
 
 class Supermarket {
 
@@ -19,23 +16,16 @@ class Supermarket {
         get() = Math.random() < 0.1
 
     val sumOfAllItems: Int
-        get() {
-            return priceByProduct.values.sum()
-        }
-    val sumOfDiscountItems: Int
-        get() {
-            return productsWithDiscount.values.sum()
-        }
-    val sumOfSpikeItems: Int
-        get() {
-            return productsWitSpike.values.sum()
-        }
+        get() = priceByProduct.values.sum()
 
+    val sumOfDiscountItems: Int
+        get() = productsWithDiscount.values.sum()
+
+    val sumOfSpikeItems: Int
+        get() = productsWitSpike.values.sum()
 
     val shoppingCartItems: Unit
-        get() {
-            return loadAllProducts().forEach { handleProductPrices(it) }
-        }
+        get() = loadAllProducts().forEach { handleProductPrices(it) }
 
     private fun handleProductPrices(productName: String) {
         val initialValue = Random.nextInt(1, 100)

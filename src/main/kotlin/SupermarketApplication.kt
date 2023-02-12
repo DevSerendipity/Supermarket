@@ -1,5 +1,3 @@
-package newOne
-
 fun main() {
     val supermarketApplication = SupermarketApplication()
     supermarketApplication.start()
@@ -22,7 +20,5 @@ class SupermarketApplication {
         println("\nItems currently on spike: ")
         itemView.displayProductsWithSpikes()
         println("Total spike value per all products: ${supermarket.sumOfSpikeItems}")
-
-
     }
 }
